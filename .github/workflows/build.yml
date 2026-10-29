@@ -14,7 +14,7 @@ jobs:
       - name: Run Build
         run: |
           qmk setup -y
-          qmk compile -kb keyball61/keyball61_right -km default -e CONVERT_TO=rp2040_ce
+          qmk compile -kb keyball/keyball61_right -km default -e CONVERT_TO=rp2040_ce
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
