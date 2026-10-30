@@ -15,6 +15,7 @@ jobs:
         run: |
           qmk setup -y
           qmk compile -kb keyboards/keyball/keyball61_right -km default
+          qmk compile -kb keyboards/keyball/keyball61_right -km default
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
